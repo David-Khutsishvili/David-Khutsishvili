@@ -145,23 +145,6 @@ One or two lines: what it is, the main technical piece, and a result if there is
 
 ---
 
-## Experience
-
-**Technical Consultant**, Freelance · *2025 – present*<br>
-System and product architecture, and feature development for companies and start-ups.
-
-**CS & Math Teaching Assistant**, Hashmonaim High School · *2025 – present*<br>
-Teaching OOP, data structures, algorithms and optimization in C++, C# and Python; supervising final projects and running code reviews.
-
-**Robotics Team Mentor & Engineer**, Darca Bat-Yam High School · *2014 – 2023*<br>
-Co-founded Bat Yam's first FIRST Robotics Competition team; developed C++ control software with sensor integration.
-
-## Education
-
-**B.Sc. Computer Science**, Holon Institute of Technology
-
----
-
 ## GitHub stats
 
 <p align="center">
