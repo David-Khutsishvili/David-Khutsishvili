@@ -1,42 +1,42 @@
 <h1 align="center">David Khutsishvili</h1>
 
 <p align="center">
-  <b>Software Engineer · Robotics · Embedded Systems</b><br>
-  B.Sc. Computer Science, Holon Institute of Technology
+  <b>Software Engineer · Robotics · AI · Embedded Systems</b>
 </p>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/davidkhuts/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0yMC40NDcgMjAuNDUyaC0zLjU1NHYtNS41NjljMC0xLjMyOC0uMDI3LTMuMDM3LTEuODUyLTMuMDM3LTEuODUzIDAtMi4xMzYgMS40NDUtMi4xMzYgMi45Mzl2NS42NjdIOS4zNTFWOWgzLjQxNHYxLjU2MWguMDQ2Yy40NzctLjkgMS42MzctMS44NSAzLjM3LTEuODUgMy42MDEgMCA0LjI2NyAyLjM3IDQuMjY3IDQuNDU1djYuMjg2ek01LjMzNyA3LjQzM2EyLjA2MiAyLjA2MiAwIDEgMSAwLTQuMTI1IDIuMDYyIDIuMDYyIDAgMCAxIDAgNC4xMjV6TTcuMTE5IDIwLjQ1MkgzLjU1NVY5aDMuNTY0djExLjQ1MnpNMjIuMjI1IDBIMS43NzFDLjc5MiAwIDAgLjc3NCAwIDEuNzI5djIwLjU0MkMwIDIzLjIyNy43OTIgMjQgMS43NzEgMjRoMjAuNDUxQzIzLjIgMjQgMjQgMjMuMjI3IDI0IDIyLjI3MVYxLjcyOUMyNCAuNzc0IDIzLjIgMCAyMi4yMjIgMGguMDAzeiIvPjwvc3ZnPg==&logoColor=white" alt="LinkedIn"></a>
-  <a href="mailto:davidhuzt@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
 </p>
+
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <i>"Nothing is more difficult, and therefore more precious, than to be able to decide."</i><br><br>
+      — Napoleon Bonaparte
+    </td>
+    <td width="50%" align="center">
+      <i>"A software engineer's job is to solve known problems and find new problems to solve."</i><br><br>
+      — Jensen Huang
+    </td>
+  </tr>
+</table>
 
 ---
 
 ## About me
 
-I build software end to end, from backend services and web apps down to firmware, sensors and motors.
-I'm most at home where code meets the physical world: robots that see and listen, devices that measure,
-and systems that have to work reliably in real time.
-
-- **Software engineering**: backend services and full-stack apps. REST and WebSocket APIs with FastAPI, React + TypeScript frontends, SQL, tested with Pytest.
-- **Robotics**: perception, control and autonomy. ROS 2, NVIDIA Isaac Sim, Webots, PID control, humanoid robots (NAO).
-- **Embedded systems**: C/C++ firmware on Arduino, ARM and Raspberry Pi. I2C, UART, FreeRTOS, custom serial protocols.
-- **Applied AI**: putting models into live systems. Computer vision, speaker verification and on-device inference with PyTorch, OpenCV and YOLO.
-
-> *Solve known problems, and find new problems to solve.*
+I'm a B.Sc. Computer Science graduate. I build software end to end, from backend services and web apps down to
+firmware, sensors and motors. I'm most at home where code meets the physical world: robots that see and listen,
+devices that measure, and systems that have to work reliably in real time.
 
 ---
 
 ## Featured projects
 
-### [3D Embedded Scanner](https://github.com/David-Khutsishvili/3D-embedded-scanner)
+### 📡 [3D Embedded Scanner](https://github.com/David-Khutsishvili/3D-embedded-scanner)
 *Embedded · Full-stack · 3D reconstruction*
 
-An Arduino-based 3D scanner built from scratch: hardware, firmware and a live control app.
-
-- C++ firmware on an Arduino Uno R4 WiFi drives 3 servos and two VL53L1X time-of-flight sensors over I2C, with a custom serial protocol and a hardware watchdog.
-- Full-stack control app: a FastAPI backend (REST, WebSocket, SQLite) and a React + TypeScript + three.js frontend with live 3D streaming and a scanner state machine.
-- Turns raw `(θ, height, distance)` samples into point clouds and closed, smoothed surface meshes.
+An Arduino 3D scanner built from scratch: C++ firmware drives servos and time-of-flight sensors over I2C, and a FastAPI + React app streams each scan live and rebuilds it as a 3D mesh.
 
 ![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
 ![Arduino](https://img.shields.io/badge/Arduino-00878F?style=flat-square&logo=arduino&logoColor=white)
@@ -46,15 +46,10 @@ An Arduino-based 3D scanner built from scratch: hardware, firmware and a live co
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![three.js](https://img.shields.io/badge/three.js-000000?style=flat-square&logo=threedotjs&logoColor=white)
 
-### [Secure Gateway](https://github.com/David-Khutsishvili/Secure-Gateway-DLProject)
+### 🔐 [Secure Gateway](https://github.com/David-Khutsishvili/Secure-Gateway-DLProject)
 *AI · Security · Computer vision*
 
-Real-time multi-modal biometric access control: face, voice and a spoken password, fused into a single decision.
-
-- Three independent gates (spoken password, biometric capture, fusion model), plus liveness detection (blink and head pose) that blocks photo and replay attacks.
-- Late-fusion MLP over 512-dim FaceNet and 192-dim ECAPA-TDNN embeddings, with a confidence-based fallback policy.
-- **99.5%** test accuracy and **98%** impostor detection on the team's dataset.
-- In progress: a desktop app that locks selected PC applications behind biometric verification.
+Real-time biometric access control that fuses face, voice and a spoken password with liveness detection, reaching 99.5% test accuracy and 98% impostor detection on the team's dataset.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
@@ -62,14 +57,10 @@ Real-time multi-modal biometric access control: face, voice and a spoken passwor
 ![MediaPipe](https://img.shields.io/badge/MediaPipe-0097A7?style=flat-square&logo=mediapipe&logoColor=white)
 ![SpeechBrain](https://img.shields.io/badge/SpeechBrain-555555?style=flat-square)
 
-### [ElderGuard: Humanoid Assistant Robot](https://github.com/David-Khutsishvili/ElderGuard-Humanoid_Assistant_Robot)
+### 🦾 [ElderGuard: Humanoid Assistant Robot](https://github.com/David-Khutsishvili/ElderGuard-Humanoid_Assistant_Robot)
 *Robotics · Edge AI · Distributed systems*
 
-A fully offline personal-assistant robot. A Raspberry Pi 4 "brain" runs all perception and decision-making, and commands a NAO V5 humanoid "body" over TCP.
-
-- Wake word and grammar-based speech recognition (Vosk), plus speaker verification (ECAPA-TDNN on ONNX) so the robot only answers its owner.
-- PID visual servoing for face tracking and "follow me", and on-demand YOLOv8n object search ("find my keys") that loads and unloads to fit the Pi's memory.
-- A state-machine orchestrator, with the Python 3 brain and the Python 2.7 NAOqi body kept fully decoupled behind a JSON-over-TCP protocol.
+A fully offline assistant robot: a Raspberry Pi 4 runs speech recognition, speaker verification, PID face tracking and YOLO object search, and commands a NAO V5 humanoid over TCP.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-A22846?style=flat-square&logo=raspberrypi&logoColor=white)
@@ -78,30 +69,22 @@ A fully offline personal-assistant robot. A Raspberry Pi 4 "brain" runs all perc
 ![YOLO](https://img.shields.io/badge/YOLOv8-111F68?style=flat-square)
 ![MediaPipe](https://img.shields.io/badge/MediaPipe-0097A7?style=flat-square&logo=mediapipe&logoColor=white)
 
-### [Async Chat App](https://github.com/David-Khutsishvili/Networking-Chat-Project)
+### 💬 [Async Chat App](https://github.com/David-Khutsishvili/Networking-Chat-Project)
 *Networking · Backend · Concurrency*
 
-An asynchronous multi-client chat server and terminal client over raw TCP/IP.
-
-- `asyncio` server handling many concurrent clients: registration and login (salted SHA-256), direct messages, group chats with owner permissions, and real-time notifications.
-- A custom line-based application protocol over TCP.
-- Traffic captured and analyzed in Wireshark to document TCP/IP encapsulation layer by layer.
+An `asyncio` TCP server and terminal client for many concurrent users, with login, direct and group messaging over a custom protocol, and Wireshark analysis of the traffic.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![asyncio](https://img.shields.io/badge/asyncio-555555?style=flat-square)
 ![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=flat-square&logo=wireshark&logoColor=white)
 
 <!--
-  ADD A NEW PROJECT: copy this block above the "More on the way" line and fill it in.
+  ADD A NEW PROJECT: copy this block above the "More projects on the way" line and fill it in.
 
-### [Project Name](https://github.com/David-Khutsishvili/REPO-NAME)
+### 🛠️ [Project Name](https://github.com/David-Khutsishvili/REPO-NAME)
 *Area · Area · Area*
 
-One-sentence description of what it is and why it matters.
-
-- What you built (the main technical piece).
-- An interesting engineering decision or challenge.
-- A result or number, if there is one.
+One or two lines: what it is, the main technical piece, and a result if there is one.
 
 ![Tech](https://img.shields.io/badge/Tech-555555?style=flat-square&logo=LOGO&logoColor=white)
 -->
@@ -109,6 +92,13 @@ One-sentence description of what it is and why it matters.
 *More projects on the way.*
 
 ---
+
+## Skills
+
+- **Software engineering**: backend services and full-stack apps. REST and WebSocket APIs with FastAPI, React + TypeScript frontends, SQL, tested with Pytest.
+- **Robotics**: perception, control and autonomy. ROS 2, NVIDIA Isaac Sim, Webots, PID control, humanoid robots (NAO).
+- **Embedded systems**: C/C++ firmware on Arduino, ARM and Raspberry Pi. I2C, UART, FreeRTOS, custom serial protocols.
+- **Applied AI**: putting models into live systems. Computer vision, speaker verification and on-device inference with PyTorch, OpenCV and YOLO.
 
 ## Tech stack
 
@@ -168,8 +158,7 @@ Co-founded Bat Yam's first FIRST Robotics Competition team; developed C++ contro
 
 ## Education
 
-**B.Sc. Computer Science**, Holon Institute of Technology · *2022 – 2026*<br>
-Highlights: Embedded Systems (100), Networking (93), Deep Learning (90)
+**B.Sc. Computer Science**, Holon Institute of Technology
 
 ---
 
